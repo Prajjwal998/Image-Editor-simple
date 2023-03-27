@@ -18,10 +18,10 @@
         <div class="filter">
           <label class="title">Filters</label>
           <div class="options">
-            <button class="active">Brightness</button>
-            <button>Saturation</button>
-            <button>Inversion</button>
-            <button>Grayscale</button>
+            <button id="brightness" class="active">Brightness</button>
+            <button id="saturation">Saturation</button>
+            <button id="nversion">Inversion</button>
+            <button id="grayscale">Grayscale</button>
           </div>
           <div class="slider">
             <div class="filter-info">
@@ -42,12 +42,13 @@
         </div>
       </div>
       <div class="preview-img">
-        <img src="image-placeholder.svg" alt="preview-img" class="src">
+        <img src="image-placeholder.svg" alt="preview-img">
       </div>
     </div>
     <div class="controls">
       <button class="reset-filter">Reset Filters</button>
       <div class="row">
+        <input type="file" class="file-input" accept="image/*">
         <button class="choose-img">Choose Image</button>
         <button class="save-img">Save Image</button>
       </div>
